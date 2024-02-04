@@ -398,7 +398,7 @@ void searchRecord()
 char* getFieldValue(char field[])
 {
     printf("Enter %s: ", field);
-    scanf("%s", fieldValue);
+    scanf(" %[^\n]s", fieldValue);
     return fieldValue;
 }
 
